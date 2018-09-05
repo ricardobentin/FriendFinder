@@ -19,13 +19,31 @@ let friends = [
   {
     name: "Ed",
     photo: "https://data.whicdn.com/images/30847676/large.jpg",
-    ans: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+    ans: ['5','1','4','4','5','1','2','5','4','1']
   },
   {
-    name: "Brad",
+    name: "Tyler",
     photo:
-      "https://static.highsnobiety.com/wp-content/uploads/2017/07/31124806/brad-pitt-workout-routine-2.jpg",
-    ans: [1, 5, 3, 2, 5, 4, 3, 2, 1, 1]
+      "https://www.popworkouts.com/wp-content/uploads/2016/05/Brad-Pitt.jpg",
+    ans: ['1','5','3','2','5','4','3','2','1','1']
+  }, 
+  {
+    name: "Angel Face",
+    photo:
+      "http://www.comicbookreligion.com/img/a/n/Angel_Face_32337.jpg",
+    ans: ['1','1','1','1','1','1','1','1','1','1']
+  },
+  {
+    name: "Marla",
+    photo:
+      "https://pbs.twimg.com/profile_images/3353201116/8e191c3c0b3a3c3d85b1640bd5411a1f.jpeg",
+    ans: ['5','5','5','5','5','5','5','5','5','5']
+  },
+  {
+    name: "Bob",
+    photo:
+      "http://www.comicbookreligion.com/img/b/o/Bob_Paulson.jpg",
+    ans: ['3','3','3','3','3','3','3','3','3','3']
   }
 ];
 
@@ -58,44 +76,41 @@ app.post("/api/friends", function(req, res) {
   let newfriend = req.body;
   console.log("This is a new friend\n", newfriend);
   let newfriendAns = req.body.ans;
-
+  console.log("This is friends", friends);
   //match logic
   let matchName = "";
   let matchImage = "";
   let totalDifference = 10000; // Make the initial value big for comparison
 
-  //do the comparison for everyone in the friends arra
+  //do the comparison for everyone in the friends array
   for (let i = 0; i < friends.length; i++) {
-    // Compute differences for each question
+    // Compute differences for each answer
     let diff = 0;
     for (var j = 0; j < newfriendAns.length; j++) {
       diff += Math.abs(friends[i].ans[j] - newfriendAns[j]);
     }
-    console.log('diff = ' + diff);
-
     // If lowest difference, record the friend match
     if (diff < totalDifference) {
-      console.log('Closest match found = ' + diff);
-      console.log('Friend name = ' + friends[i].name);
-      console.log('Friend image = ' + friends[i].photo);
+      console.log("Closest match found = " + diff);
+      console.log("Friend name = " + friends[i].name);
+      console.log("Friend image = " + friends[i].photo);
 
       totalDifference = diff;
       matchName = friends[i].name;
       matchImage = friends[i].photo;
 
-      console.log("this is match name:", matchName)
-      console.log("this is match image:", matchImage)
+      console.log("this is match name:", matchName);
+      console.log("this is match image:", matchImage);
     }
   }
 
   //add a new friend
   friends.push(newfriend);
 
-  console.log("this is match name:", matchName)
-  console.log("this is match image:", matchImage)
+  console.log("this is match name:", matchName);
+  console.log("this is match image:", matchImage);
   //send the response back to the html page
-  res.json({matchName: matchName, matchImage: matchImage});
-  
+  res.json({ matchName: matchName, matchImage: matchImage });
 });
 
 // Starts the server to begin listening
