@@ -7,7 +7,7 @@ let friends = [
     {
       name: "Tyler",
       photo:
-        "https://www.popworkouts.com/wp-content/uploads/2016/05/Brad-Pitt.jpg",
+        "https://i.pinimg.com/originals/4e/fa/54/4efa548778342f2dca2dacd1ccb1e8ca.jpg",
       ans: ["1", "5", "3", "2", "5", "4", "3", "2", "1", "1"]
     },
     {
