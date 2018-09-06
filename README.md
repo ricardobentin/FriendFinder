@@ -17,7 +17,7 @@ From there, run node server.js in your terminal
 
 The application has two HTML pages:
 * Home: 
-<img src="https://github.com/ricardobentin/bamazon/blob/master/Bamazon%20CLI.png" alt="HOME">
+<img src="https://github.com/ricardobentin/FriendFinder/blob/master/Bamazon%20CLI.png" alt="HOME">
 
 * Survey:
 
