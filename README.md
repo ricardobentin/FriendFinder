@@ -2,7 +2,7 @@
 
 FriendFinder is an application that users can use to find like-minded friends. Each user will answer 10 questions in a survey and then be matched to a friend who answered the survey in a similar fashion.
 
-To get started, you can either go here: https://infinite-garden-37349.herokuapp.com/
+To get started, you can either go here: https://desolate-hamlet-67909.herokuapp.com
 
 OR
 
