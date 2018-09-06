@@ -17,11 +17,16 @@ From there, run node server.js in your terminal
 
 The application has two HTML pages:
 * Home: 
-<img src="https://github.com/ricardobentin/friendfinder/assets/images/homepage.png" alt="HOME">
+<img src="https://github.com/ricardobentin/FriendFinder/blob/master/assets/images/homepage.png" alt="HOME">
 
 * Survey:
+<img src="https://github.com/ricardobentin/FriendFinder/blob/master/assets/images/survey.jpg" alt="SURVEY">
 
-There is an API route for users as well:
-* /api/friends - which will display a JSON of all possible friends
+There is an API route for users to see a JSON of all possible friends
+* /api/friends
+<img src="https://github.com/ricardobentin/FriendFinder/blob/master/assets/images/api-friends.png" alt="API">
+
+Demo of the app:
+<img src="https://github.com/ricardobentin/FriendFinder/blob/master/assets/images/demo.gif" alt="DEMO">
 
 
