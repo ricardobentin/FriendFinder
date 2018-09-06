@@ -27,6 +27,6 @@ There is an API route for users to see a JSON of all possible friends
 <img src="https://github.com/ricardobentin/FriendFinder/blob/master/assets/images/api-friends.png" alt="API">
 
 Demo of the app:
-<img src="https://github.com/ricardobentin/FriendFinder/blob/master/assets/images/demo.gif" alt="DEMO">
+<img src="https://github.com/ricardobentin/FriendFinder/blob/master/assets/images/demo.GIF" alt="DEMO">
 
 
