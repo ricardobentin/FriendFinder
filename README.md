@@ -29,4 +29,11 @@ There is an API route for users to see a JSON of all possible friends
 Demo of the app:
 <img src="https://github.com/ricardobentin/FriendFinder/blob/master/assets/images/demo.GIF" alt="DEMO">
 
-
+Features of the app:
+* Runs on an express server
+* Leverages body parser as a middleware to parse incoming request bodies
+* Routes
+    * HTML Routes: 2 get routes to produce the home page and survey page 
+    * API Routes: /api/friends
+        * get route to show all of the friends
+        * post route to add a new friend to the friends array and then perform the logic to find a friend with similar responses and present the name and image of that friend to the user in a modal window that spawns from the survey html page
